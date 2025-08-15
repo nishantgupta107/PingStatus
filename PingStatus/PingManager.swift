@@ -26,17 +26,16 @@ class PingManager: ObservableObject {
     }
 
     // Gradient Colors
-    @AppStorage("successColorTop") private var successColorTopData: Data = Color.green.toData()
-    @AppStorage("successColorBottom") private var successColorBottomData: Data = Color.blue.toData()
-    @AppStorage("failureColorTop") private var failureColorTopData: Data = Color.red.toData()
-    @AppStorage("failureColorBottom") private var failureColorBottomData: Data = Color.orange.toData()
-    @AppStorage("unknownColorTop") private var unknownColorTopData: Data = Color.gray.toData()
-    @AppStorage("unknownColorBottom") private var unknownColorBottomData: Data = Color.secondary.toData()
+    @AppStorage("successColorTop") var successColorTopData: Data = Color.green.toData()
+    @AppStorage("successColorBottom") var successColorBottomData: Data = Color.blue.toData()
+    @AppStorage("failureColorTop") var failureColorTopData: Data = Color.red.toData()
+    @AppStorage("failureColorBottom") var failureColorBottomData: Data = Color.orange.toData()
+    @AppStorage("unknownColorTop") var unknownColorTopData: Data = Color.gray.toData()
+    @AppStorage("unknownColorBottom") var unknownColorBottomData: Data = Color.secondary.toData()
     
     // NEW: Latency Text Settings
     @AppStorage("showLatency") var showLatency: Bool = true
     @AppStorage("latencyFontSize") var latencyFontSize: Double = 12.0
-    @AppStorage("latencyColorData") var latencyColorData: Data = Color.primary.toData()
 
     // Computed properties to easily get and set the colors for the UI.
         var successGradient: LinearGradient {

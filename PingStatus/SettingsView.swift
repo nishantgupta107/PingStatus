@@ -58,11 +58,6 @@ struct SettingsView: View {
             Section(header: Text("Latency Display")) {
                 Toggle("Show Latency Text", isOn: $showLatency)
                 
-                ColorPicker("Text Color", selection: Binding(
-                    get: { Color(data: latencyColorData) },
-                    set: { latencyColorData = $0.toData() }
-                ), supportsOpacity: false)
-                
                 Stepper("Font Size: \(Int(latencyFontSize))pt", value: $latencyFontSize, in: 8...24)
             }
         }

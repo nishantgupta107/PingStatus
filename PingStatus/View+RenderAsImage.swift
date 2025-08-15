@@ -16,8 +16,8 @@ extension View {
         let image = NSImage(size: view.bounds.size)
         image.addRepresentation(bitmapRep)
         
-        // Mark the image as a template so it handles dark/light mode automatically
-        image.isTemplate = true
+        // removing the template so that colors can show
+        image.isTemplate = false
         
         return image
     }
