@@ -63,5 +63,21 @@ struct SettingsView: View {
         }
         .padding()
         .frame(width: 350)
+        .onAppear {
+            // This code finds the window that is showing this view.
+            // We check the title to make sure we're getting the correct one.
+            if let window = NSApp.windows.first(where: { $0.title == "PingStatus Settings" }) {
+                
+                // This is the key line that makes the window float on top.
+                window.level = .floating
+                
+                // This is an optional but recommended line to make sure the
+                // window is visible on all Spaces (virtual desktops).
+                window.collectionBehavior = .canJoinAllSpaces
+
+                // This makes the window active and ready for keyboard input.
+                window.makeKeyAndOrderFront(nil)
+            }
+        }
     }
 }

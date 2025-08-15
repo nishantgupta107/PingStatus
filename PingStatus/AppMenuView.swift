@@ -23,7 +23,8 @@ struct AppMenuView: View {
             Divider()
 
             Button("Settings...") {
-                // This command opens the window with the ID we defined in the main App file.
+                // This brings the app to the foreground
+                NSApp.activate(ignoringOtherApps: true)
                 openWindow(id: "settings-window")
             }
 
