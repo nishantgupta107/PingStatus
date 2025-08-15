@@ -80,3 +80,6 @@ com.johnholdsworth.InjectionIII/InjectionIII
 !fastlane/test_output
 !fastlane/report.xml
 !fastlane/Preview.html
+
+#releases
+Releases
