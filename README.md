@@ -36,7 +36,7 @@ A lightweight macOS menu bar application that monitors your internet connection 
 
 ## Changelog
 
-### Version 1.0
+### Version 1.0.0
 - Initial stable build
 - Customizable success and failure colors
 - Toggle latency text display

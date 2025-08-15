@@ -1,0 +1,82 @@
+# Xcode
+.DS_Store
+*.swpm
+*.xcworkspace/
+xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcshareddata/
+*.xcodeproj/
+*.xcodeproj/*/xcuserdata/
+*.xcodeproj/*/project.xcworkspace/
+*.xcodeproj/*/xcshareddata/
+*.xcodeproj/*/project.xcworkspace/
+*.xcodeproj/*/project.xcworkspace/xcuserdata/
+*.xcodeproj/*/project.xcworkspace/xcshareddata/
+*.xcodeproj/*/project.xcworkspace/contents.xcworkspacedata
+*.xcodeproj/*/project.xcworkspace/xcshareddata/
+*.xcodeproj/*/project.xcworkspace/xcuserdata/
+
+# Build directory
+build/
+DerivedData/
+
+# App packaging
+*.dSYM.zip
+*.dSYM
+
+# User settings
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+!default.perspectivev3
+
+# Automatic backup files
+*~.nib/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+# After new code Injection tools exist's, it's required to add their specific content
+# https://github.com/johnno1962/injectionforxcode
+com.johnholdsworth.InjectionIII/InjectionIII.log
+com.johnholdsworth.InjectionIII/InjectionIII
+
+# Local development
+.env
+.env.*
+!.env.example
+
+# Debug logs
+*.log
+
+# Local configuration
+*.xcconfig
+!Example/
+!Tests/
+!Pods/
+!Carthage/
+!fastlane/
+!fastlane/screenshots
+!fastlane/screenshots/**/*.png
+!fastlane/test_output
+!fastlane/report.xml
+!fastlane/Preview.html
