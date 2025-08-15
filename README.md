@@ -12,7 +12,7 @@ A lightweight macOS menu bar application that monitors your internet connection 
 
 ## Installation
 
-1. Download the latest release from the [Releases] page
+1. Download the latest release from the [Release](https://github.com/nishantgupta107/PingStatus/releases) page
 2. Move `PingStatus.app` to your Applications folder
 3. Launch the application
 4. The app will appear in your menu bar
